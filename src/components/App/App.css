@@ -1,2 +1,47 @@
+#root {
+	background: lightslategray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .App {
+	width: 35.188rem;
+	height: 64.125rem;
+	background: black;
+	color: white;
+	border-radius: 3.125rem;
+	padding: 1.25rem;
+	position: relative;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	height: 8.625rem;
+	padding: 0 1.25rem;
+}
+
+.display {
+	font-size: 8.125rem;
+	margin-bottom: 1.25rem;
+	font-weight: 300;
+	text-align: right;
+}
+
+.buttons {
+	display: grid;
+	grid-gap: 1.25rem;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.bottom {
+	position: absolute;
+	width: 12.5rem;
+	height: 0.313rem;
+	background: white;
+	bottom: 0.625rem;
+	left: 50%;
+	border-radius: 0.25rem;
+	transform: translateX(-50%);
 }
